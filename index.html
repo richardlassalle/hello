@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A premium Vite experience created for you.">
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Outfit:wght@700;900&display=swap"
+    rel="stylesheet">
+
+  <title>Vite Premium App</title>
+</head>
+
+<body>
+  <div id="app">
+    <nav class="glass-nav">
+      <div class="logo">Vite<span class="highlight">App</span></div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <button id="theme-toggle" aria-label="Toggle Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Building the <span class="gradient-text">Future</span> of RXOS.</h1>
+          <p class="subtitle">Experience the speed of Vite with a design that inspires.</p>
+          <div class="cta-group">
+            <button id="counter" class="primary-btn">Clicks: 0</button>
+            <a href="https://vitejs.dev" target="_blank" class="secondary-btn">Learn Vite</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="glow-orb orb-1"></div>
+          <div class="glow-orb orb-2"></div>
+          <div class="glass-card">
+            <pre><code>npm create vite@latest</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <h2>Why Choose Us?</h2>
+        <div class="grid">
+          <div class="card">
+            <div class="icon">⚡️</div>
+            <h3>Lightning Fast</h3>
+            <p>Instant server start and HMR interactions.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🎨</div>
+            <h3>Premium Design</h3>
+            <p>Crafted with glassmorphism and modern aesthetics.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🛠</div>
+            <h3>Extensible</h3>
+            <p>Built on top of the powerful Rollup ecosystem.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Vite Premium App. Built with ❤️.</p>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
