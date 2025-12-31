@@ -1,21 +1,11 @@
-import { createSignal } from 'solid-js'
+import { Toolbar } from './components/Toolbar';
+import { Main } from './components/Main';
 
-function App() {
-  const [count, setCount] = createSignal(0)
-
+export function App() {
   return (
-    <div class="container">
-      <h1>SolidJS Starter</h1>
-      <div class="card">
-        <button onClick={() => setCount(count() + 1)}>
-          Count is {count()}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </div>
+    <div class="min-h-screen bg-dark-primary">
+      <Toolbar />
+      <Main />
     </div>
-  )
+  );
 }
-
-export default App
